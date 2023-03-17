@@ -101,6 +101,7 @@ const createProperty = async (req, res) => {
 
         res.status(200).json({ message: "Property created successfully" });
     } catch (error) {
+        console.log("Error catch in prop");
         res.status(500).json({ message: error.message });
     }
 };

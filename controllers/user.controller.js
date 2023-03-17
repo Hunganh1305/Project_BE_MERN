@@ -26,6 +26,7 @@ const createUser = async (req, res) => {
 
         res.status(200).json(newUser);
     } catch (error) {
+        console.log("Error catch");
         res.status(500).json({ message: error.message });
     }
 };
